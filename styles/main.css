@@ -23,7 +23,7 @@
 
 body {
 	background-image: url("../images/bg.jpg");
-	background-color: rgba(125, 200, 171, 1);
+	background-color: rgba(170, 206, 190, 0.74);
 	background-size: cover;
     background-position: 50% 0%;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@ body {
 
 .hd_colum_right p {
 	color: #848282;
-	font: 14px/1.1 Tahoma;
+	font: 18.5px/1.1 Tahoma;
 }
 
 .hd_colum_right  span {
@@ -108,7 +108,7 @@ body {
 	height: 20px;
 	top: 33px;
 	margin-left: -1px;
-	background: url("../images/arrow.png") no-repeat 65px 7px #525252;
+	background: url("../images/arrow.png") no-repeat 65px 7px #848282;
 	z-index: 9;
 }
 
@@ -139,8 +139,8 @@ body {
 
 .submenu ul {
 	display: table;
-	background-color: #525252;
-	width: 920px;
+	background-color: #848282;
+	width: 1020px;
 	z-index: 10;
 	padding: 40px 30px 50px 30px;
 }
@@ -149,7 +149,7 @@ body {
 	display: table-cell;
 	background: none;
 	box-shadow: none;
-	padding-right: 20px;
+	padding-right: 5px;
 }
 
 .submenu li a {
@@ -169,7 +169,7 @@ body {
 } 
 */
 .submenu li a:hover {
-	color: #6d9d31;
+	color: #7ff1C6;
 	background: none;
 	box-shadow: none;
 }
