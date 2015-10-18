@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Главная</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles/reset-min.css" />
+	<link rel="stylesheet" type="text/css" href="styles/main.css" />
+	
+	<link href="slider/jquery.bxslider.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="styles/jquery.dropdown.css" />
+    <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {		
+			 $('.bxslider').bxSlider({
+				adaptiveHeight: true,
+				speed: 900,
+				pager: false,
+				auto: true
+			  });  
+		});
+	</script>
+</head>
+<body>
+	<div class="main">
+		<header>
+			<div class="hd_colum_left">
+				<a href="#">
+					<img src="images/logo.png" alt="" />
+				</a>
+			</div>
+			<div class="hd_colum_right">
+				<p>«ГБОУ ВПО МГМСУ им. А.И. Евдокимова Минздрава России </p>
+				<span>КАФЕДРА ОБЩЕСТВЕННОГО ЗДОРОВЬЯ <br />И ЗДРАВООХРАНЕНИЯ» </span>
+			</div>
+		</header>
+		<div class="content">
+			<div class="block_bg1">
+				<div class="main_menu">
+					<nav>
+						<ul>
+							<li>
+								<a href="#" data-jq-dropdown="#jq-dropdown1">студентам</a>
+								<div id="jq-dropdown1" class="submenu jq-dropdown jq-dropdown-tip">
+									<ul>
+										<li>
+											<a href="#" class="a_name">СПО:</a>
+											<div class="mn_group">
+												<a href="#">специальность 1</a>
+												<a href="#"> специальность 2</a>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">ВПО</a>
+											<div class="mn_group">
+												<a href="#"> факультет – курс 1, и т.д. </a>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">Рекомендуемая литература</a>
+											<div class="mn_group">
+												
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">Студенческое научное общество</a>
+											<div class="mn_group">
+												
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">Отработки пропущенных занятий</a>
+											<div class="mn_group">
+												
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#" data-jq-dropdown="#jq-dropdown2">ординаторам</a>
+								<div id="jq-dropdown2" class="submenu jq-dropdown jq-dropdown-tip">
+									<ul>
+										<li>
+											<a href="#" class="a_name">Специальность Организация здравоохранения и общественное здоровье:</a>
+											<div class="mn_group">
+												<a href="#">прием в ординатуру</a>
+												<a href="#">план подготовки</a>
+												<a href="#">расписание занятий</a>
+												<a href="#">специальность</a>
+												<a href="#">аттестация</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#" data-jq-dropdown="#jq-dropdown3">аспирантом</a>
+								<div id="jq-dropdown3" class="submenu jq-dropdown jq-dropdown-tip">
+									<ul>
+										<li>
+											<a href="#" class="a_name">Специальность 14.02.03 Общественное здоровье и здравоохранение</a>
+											<div class="mn_group">
+												<a href="#">прием в аспирантуру</a>
+												<a href="#">план подготовки</a>
+												<a href="#">расписание занятий</a>
+												<a href="#">аттестация</a>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">Общество молодых ученых</a>
+											<div class="mn_group">
+	
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">Иные специальности </a>
+											<div class="mn_group">
+												<a href="#">расписание занятий</a>
+												<a href="#">тематика</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#" data-jq-dropdown="#jq-dropdown4">слушателям</a>
+								<div id="jq-dropdown4" class="submenu jq-dropdown jq-dropdown-tip">
+									<ul>
+										<li>
+											<a href="#" class="a_name">Профессиональная переподготовка </a>
+											<div class="mn_group">
+												<a href="#">краткая аннотация, цель курса обучения </a>
+												<a href="#">правила приема на обучение </a>
+												<a href="#">тематика</a>
+												<a href="#">аттестация</a>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">Повышение квалификации (144 часа, подтверждение сертификата) </a>
+											<div class="mn_group">
+												<a href="#">краткая аннотация, цель курса обучения </a>
+												<a href="#">правила приема на обучение </a>
+												<a href="#">тематика </a>
+												<a href="#">аттестация</a>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">Повышение квалификации (до 144 часов) </a>
+											<div class="mn_group">
+												
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">Дистанционное обучение </a>
+											<div class="mn_group">
+												
+											</div>
+										</li>
+										<li>
+											<a href="#" class="a_name">Заявка на обучение </a>
+											<div class="mn_group">
+												
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a href="#">контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="bl_top">
+					<div class="top_colum_left">
+						<nav>
+							<ul>
+								<li>
+									<a href="#" class="active">главная</a>
+								</li>
+								<li>
+									<a href="#">кафедра</a>
+								</li>
+								<li>
+									<a href="#">Федеральный центр</a>
+								</li>
+								<li>
+									<a href="#">наука</a>
+								</li>
+								<li>
+									<a href="#">обучение</a>
+								</li>
+								<li>
+									<a href="#">технологии</a>
+								</li>
+								<li>
+									<a href="#">библиотека</a>
+								</li>
+								<li>
+									<a href="#">электронный журнал</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="top_colum_center">
+						<ul class="bxslider">
+							<li>
+								<img src="images/galeryimg1.jpg" />
+							</li>
+							<li>
+								<img src="images/galeryimg2.jpg" />
+							</li>
+							<li>
+								<img src="images/galeryimg3.jpg" />
+							</li>
+							<li>
+								<img src="images/galeryimg4.jpg" />
+							</li>
+						</ul>
+					</div>
+					<div class="top_colum_right">
+						<div class="welcome">
+							<h3>ДОБРО ПОЖАЛОВАТЬ </h3>
+						</div>
+						<p>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто дважды кликните, чтобы добавить свой текст и настроить шрифт. Чтобы удалить этот текст, нажмите один раз и выберите значок «Корзина».</p>
+						<a href="./order.html" class="order">Подать заявку</a>
+					</div>
+				</div>
+			</div>
+			<div class="block_bg2">
+				<div class="events">
+					<h2>события</h2>
+					<div class="events_bl">
+						<div class="events_left">
+							<p><span>12</span> ЯНВ.﻿﻿</p>
+						</div>
+						<div class="events_right">
+							<p>Это текст.﻿﻿</p>
+						</div>
+					</div>
+					<div class="border"></div>
+					<div class="events_bl">
+						<div class="events_left">
+							<p><span>12</span> ЯНВ.﻿﻿</p>
+						</div>
+						<div class="events_right">
+							<p>Это текст.﻿﻿</p>
+						</div>
+					</div>
+					<div class="border"></div>
+					<div class="events_bl">
+						<div class="events_left">
+							<p><span>12</span> ЯНВ.﻿﻿</p>
+						</div>
+						<div class="events_right">
+							<p>Это текст.﻿﻿</p>
+						</div>
+					</div>
+					<div class="border"></div>
+					<a href="#">+ Подробнее</a>
+				</div>
+				<div class="contacts">
+					<h2>КОНТАКТНАЯ ЮИНФОРМАЦИЯ</h2>
+					<p>Москва, Россия </p>
+					<p>ул.</p>
+					<p>​Тел.: +7 (495) 000 00 00 </p>
+					<p>​Факс: +7 (495) 000 00 00</p>
+					<p>info@mysite.com</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+				<div class="ft_cl_left">
+					<p>&copy; 2015</p>
+				</div>
+				<div class="ft_cl_right">
+					
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
