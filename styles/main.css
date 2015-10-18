@@ -258,6 +258,7 @@ body {
 	color: #848282;
 	font: 15px/1.2 SansSerif;
 	margin-top: 15px;
+	text-align: justify;
 }
 
 .order {
@@ -506,4 +507,20 @@ footer {
 	opacity: 0.7;
 }
 
+.header_contacts{
+	size: 10px;
+    padding-top: 50px;
+    padding-right: 50px;
+    float: right;
+    display: inline-block;
+	font: 20px/1.1 Tahoma;
+	color: #396F5A;
+}
+
+
+.header_contacts email{
+	font: 18px/1.1 Tahoma;
+	color: #396F5A;
+	float: right;
+}
 
