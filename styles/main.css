@@ -509,7 +509,7 @@ footer {
 
 .header_contacts{
 	size: 10px;
-    padding-top: 50px;
+    padding-top: 62px;
     padding-right: 50px;
     float: right;
     display: inline-block;
@@ -523,4 +523,35 @@ footer {
 	color: #396F5A;
 	float: right;
 }
+
+.content-text{
+	width: 850px;
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+.content-text img{
+	width: 350px;
+	float: right;
+	margin: 20px;
+}
+
+.content-text h1{
+	font: 25px/1.1 Tahoma;
+	text-align: center;
+	color: rgba(0,0,0,0.4);
+}
+.content-text h2{
+	font: 18px/1.1 Tahoma;
+	font-weight: bold;
+	line-height: 2.5;
+}
+
+.content-text p{
+	text-indent: 20px;
+	color: #848282;
+    font: 15px/1.2 SansSerif;
+    text-align: justify;
+}
+
 

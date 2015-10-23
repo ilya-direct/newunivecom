@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Заявка</title>
+	<title>Главная</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="styles/reset-min.css" />
 	<link rel="stylesheet" type="text/css" href="styles/main.css" />
-	<link rel="stylesheet" type="text/css" href="styles/select.css" />
+	
+	<link href="slider/jquery.bxslider.css" rel="stylesheet" />
 	
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
-	
-	<script type="text/javascript" src="js/select.js"></script>
 	<link rel="icon" href="favicon.ico">
 	<link type="text/css" rel="stylesheet" href="styles/jquery.dropdown.css" />
     <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
 	
-	<script type="text/javascript" src="js/jquery.maskedinput-1.2.2.js"></script>
-	
-	<script type="text/javascript">
-		jQuery(function($) {
-			$.mask.definitions['~']='[+-]';
-			$('#phone').mask('+7-999-999-99-99');
+	<script>
+		$(document).ready(function() {		
+			 $('.bxslider').bxSlider({
+				adaptiveHeight: true,
+				speed: 900,
+				pager: false,
+				auto: true
+			  });  
 		});
 	</script>
 </head>
@@ -34,7 +35,7 @@
 				</a>
 			</div>
 			<div class="hd_colum_right">
-				<p>ГБОУ ВПО МГМСУ им. А.И. Евдокимова Минздрава России</p>
+				<p>ГБОУ ВПО МГМСУ им. А.И. Евдокимова Минздрава России </p>
 				<span>КАФЕДРА ОБЩЕСТВЕННОГО ЗДОРОВЬЯ <br />И ЗДРАВООХРАНЕНИЯ </span>
 			</div>
 			<div class="header_contacts">
@@ -166,7 +167,7 @@
 											</div>
 										</li>
 										<li>
-											<a href="#" class="a_name">Заявка на обучение </a>
+											<a href="order.html" class="a_name">Заявка на обучение </a>
 											<div class="mn_group">
 												
 											</div>
@@ -175,7 +176,7 @@
 								</div>
 							</li>
 							<li>
-								<a href="#">заявка на обучение</a>
+								<a href="order.html">заявка на обучение</a>
 							</li>
 						</ul>
 					</nav>
@@ -185,7 +186,7 @@
 						<nav>
 							<ul>
 								<li>
-									<a href="./index.html">главная</a>
+									<a href="#" class="active">главная</a>
 								</li>
 								<li>
 									<a href="#">кафедра</a>
@@ -211,38 +212,55 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="orderr">
-						<h2>Заявка на обучение</h2>
-						<div class="order_left">
-							<div class="form">
-								<form name="Myform" action="#" method="post">
-									<div>
-										<input type="text" name="family" onfocus="if (this.value == 'Фамилия') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Фамилия';}" value="Фамилия" required />
-										<input type="text" name="name" onfocus="if (this.value == 'Имя') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Имя';}" value="Имя" required />
-										<input type="text" name="ot" onfocus="if (this.value == 'Отчество') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Отчество';}" value="Отчество" required />
-										<input type="tel" name="tel" id="phone"  placeholder="Мобильный телефон" required />
-										<input type="email" name="email" onfocus="if (this.value == 'Электронная почта') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Электронная почта';}" value="Электронная почта" required />
-										<input type="text" name="work" onfocus="if (this.value == 'Место работы') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Место работы';}" value="Место работы" required />
-										<input type="text" name="dolj" onfocus="if (this.value == 'Должность') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Должность';}" value="Должность" required />
-										<div class="content_select">
-											<select id="something" name="pre_order_form[order][type]" tabindex="101">
-												<option value="" class="select_onee">Выберите пункт</option>
-												<option value="1">Профессиональная переподготовка</option>
-												<option value="2">Повышение квалификации (144 часа, подтверждение сертификата)</option>
-												<option value="3">ПК «Экспертиза временной нетрудоспособности в медицинской организации» (72 часа), </option>
-												<option value="4"> ПК «Контроль качества медицинской помощи» (72 часа)</option>
-												<option value="5">ПК «Эффективный менеджмент в медицинских организациях» <br />(72 часа) и т.д. – с возможностью добавления и удаления курсов</option>
-											</select>	
-										</div>
-										<button>Отправить</button>
-									</div>
-								</form>
-							</div>
+					<div class="content-text">
+					  <img src="./images/slushatel.jpg">
+					  <h1> Слушателям </h1>
+					  <h2> Аннотация </h2>
+					<p>Программа профессиональной переподготовки по специальности «Организация здравоохранения и общественное здоровье» предназначена для подготовки вновь назначенных на должность руководителей организаций здравоохранения, их заместителей, врачей-методистов, врачей-статистиков и лиц, состоящих в резерве на замещение этих должностей. Курс обучения рассчитан на 3,5 месяца и нацелен  на формирование способности и готовности руководителей здравоохранения принимать оптимальные управленческие решения, внедряя эффективные технологии управления  с учетом тенденций общественного здоровья и влияния факторов внешней среды.</p>
+					<p>Все занятия проходят в комфортных аудиториях, симмуляционном  и ситуационном центрах . Для формирования профессиональных компетенций в процессе подготовки используются современные педагогические технологии (тренинги, кейсы, деловые игры, круглые столы, проектные работы и др.), в том числе электронное и дистанционное обучение.</p>
+					<p>Опытные преподаватели  кафедры - организаторы здравоохранения, юристы, экономисты – формируют системное мышление современного руководителя, способного управлять организацией здравоохранения в условиях неопределённости и риска.</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="block_bg2">
+				<div class="events">
+					<h2>события</h2>
+					<div class="events_bl">
+						<div class="events_left">
+							<p><span>12</span> ЯНВ.﻿﻿</p>
 						</div>
-						<div class="order_right">
-							<img src="images/order_img.jpg" alt="" />
+						<div class="events_right">
+							<p>Это текст.﻿﻿</p>
 						</div>
 					</div>
+					<div class="border"></div>
+					<div class="events_bl">
+						<div class="events_left">
+							<p><span>12</span> ЯНВ.﻿﻿</p>
+						</div>
+						<div class="events_right">
+							<p>Это текст.﻿﻿</p>
+						</div>
+					</div>
+					<div class="border"></div>
+					<div class="events_bl">
+						<div class="events_left">
+							<p><span>12</span> ЯНВ.﻿﻿</p>
+						</div>
+						<div class="events_right">
+							<p>Это текст.﻿﻿</p>
+						</div>
+					</div>
+					<div class="border"></div>
+					<a href="#">+ Подробнее</a>
+				</div>
+				<div class="contacts">
+					<h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+					<p>Москва, Россия </p>
+					<p>Милютинский переулок, 19/4с1</p>
+					<p>​Тел.: +7 (495) 621 89 43 </p>
+					<p>orgzdrav@koziz.ru</p>
 				</div>
 			</div>
 		</div>
