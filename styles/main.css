@@ -260,7 +260,7 @@ body {
 	margin-top: 15px;
 	text-align: justify;
 }
-
+/*
 .order {
 	display: block;
 	width: 230px;
@@ -272,9 +272,10 @@ body {
 	margin-top: 2px;
 	position: relative;
 	padding: 18px 0 0 80px;
-}
+}*/
 
-.order:after {
+
+/*.order:after {
     content: '';
     display: block;
     position: absolute;
@@ -284,7 +285,7 @@ body {
     height: 30px;
     margin-left: -11px;
     background: url(../images/pl.png) no-repeat;
-}
+}*/
 
 .block_bg2 {
 	background-color: #fff;
@@ -417,14 +418,14 @@ footer {
 	opacity: 0.7;
 }
 
-.orderr {
+.order {
 	display: inline-block;
 	vertical-align: top;	
 	width: 845px;
 	margin-left: 20px;
 }
 
-.orderr h2 {
+.order h2 {
 	color: #0A4495;
 	font: 33px/1.1 SansSerif;
 	text-transform: uppercase;

@@ -1,0 +1,32 @@
+<div class="order">
+    <h2>Заявка на обучение</h2>
+    <div class="order_left">
+        <div class="form">
+            <form name="Myform" action="#" method="post">
+                <div>
+                    <input type="text" name="family" onfocus="if (this.value == 'Фамилия') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Фамилия';}" value="Фамилия" required />
+                    <input type="text" name="name" onfocus="if (this.value == 'Имя') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Имя';}" value="Имя" required />
+                    <input type="text" name="ot" onfocus="if (this.value == 'Отчество') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Отчество';}" value="Отчество" required />
+                    <input type="tel" name="tel" id="phone"  placeholder="Мобильный телефон" required />
+                    <input type="email" name="email" onfocus="if (this.value == 'Электронная почта') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Электронная почта';}" value="Электронная почта" required />
+                    <input type="text" name="work" onfocus="if (this.value == 'Место работы') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Место работы';}" value="Место работы" required />
+                    <input type="text" name="dolj" onfocus="if (this.value == 'Должность') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Должность';}" value="Должность" required />
+                    <div class="content_select">
+                        <select id="something" name="pre_order_form[order][type]" tabindex="101">
+                            <option value="" class="select_onee">Выберите пункт</option>
+                            <option value="1">Профессиональная переподготовка</option>
+                            <option value="2">Повышение квалификации (144 часа, подтверждение сертификата)</option>
+                            <option value="3">ПК «Экспертиза временной нетрудоспособности в медицинской организации» (72 часа), </option>
+                            <option value="4"> ПК «Контроль качества медицинской помощи» (72 часа)</option>
+                            <option value="5">ПК «Эффективный менеджмент в медицинских организациях» <br />(72 часа) и т.д. – с возможностью добавления и удаления курсов</option>
+                        </select>
+                    </div>
+                    <button>Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="order_right">
+        <img src="../images/order_img.jpg" alt="" />
+    </div>
+</div>

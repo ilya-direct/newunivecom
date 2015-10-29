@@ -1,36 +1,33 @@
-<!DOCTYPE html>
+<?
+    if(empty($_GET) or empty($_GET['q'])){
+	    $page='main';
+    }else{
+	    $page=$_GET['q'];
+    }
+	$file=realpath('./pages/'.$page.'.html');
+	if(file_exists($file)){
+		$content=file_get_contents($file);
+	}else{
+		$content="";
+	}
+?><!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8" />
 	<title>Главная</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles/reset-min.css" />
 	<link rel="stylesheet" type="text/css" href="styles/main.css" />
-	
-	<link href="slider/jquery.bxslider.css" rel="stylesheet" />
-	
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script src="js/jquery.bxslider.js"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
-	<link rel="icon" href="favicon.ico">
 	<link type="text/css" rel="stylesheet" href="styles/jquery.dropdown.css" />
     <script type="text/javascript" src="js/jquery.dropdown.min.js"></script>
-	
-	<script>
-		$(document).ready(function() {		
-			 $('.bxslider').bxSlider({
-				adaptiveHeight: true,
-				speed: 900,
-				pager: false,
-				auto: true
-			  });  
-		});
-	</script>
+	<? require_once('pages/head.php') ?>
 </head>
 <body>
 	<div class="main">
 		<header>
 			<div class="hd_colum_left">
-				<a href="index.html">
+				<a href="index.php">
 					<img src="images/logo.png" alt="" />
 				</a>
 			</div>
@@ -39,7 +36,7 @@
 				<span>КАФЕДРА ОБЩЕСТВЕННОГО ЗДОРОВЬЯ <br />И ЗДРАВООХРАНЕНИЯ </span>
 			</div>
 			<div class="header_contacts">
-              <tel><b>+7 (495) 621 8943<b></tel><br>
+              <tel><b>+7 (495) 621 8943</b></tel><br>
   			  <email> orgzdrav@koziz.ru </email>
              </div>
 		</header>
@@ -137,37 +134,35 @@
 								<div id="jq-dropdown4" class="submenu jq-dropdown jq-dropdown-tip">
 									<ul>
 										<li>
-											<a href="#" class="a_name">Профессиональная переподготовка </a>
+											<a href="#" class="a_name">Профессиональная переподготовка <br /></a>
 											<div class="mn_group">
-												<a href="slushatelyam-annotaciya.html">краткая аннотация, цель курса обучения </a>
-												<a href="#">правила приема на обучение </a>
-												<a href="#">тематика</a>
-												<a href="#">аттестация</a>
+												<a href="index.php?q=slushatel/pp_annotaciya">Аннотация курса</a>
+												<a href="index.php?q=slushatel/pp_zachislenie">Зачисление на обучение</a>
+												<a target="_blank" href="pdf/9.pdf">Учебный план</a>
 											</div>
 										</li>
 										<li>
 											<a href="#" class="a_name">Повышение квалификации<br />(144 часа, подтверждение сертификата) </a>
 											<div class="mn_group">
-												<a href="#">краткая аннотация, цель курса обучения </a>
-												<a href="#">правила приема на обучение </a>
-												<a href="#">тематика </a>
-												<a href="#">аттестация</a>
+												<a href="index.php?q=slushatel/pk_annotaciya">Аннотация курса</a>
+												<a href="index.php?q=slushatel/pk_zachislenie">Зачисление на обучение</a>
+												<a target="_blank" href="pdf/13.pdf">Учебный план</a>
 											</div>
 										</li>
 										<li>
-											<a href="#" class="a_name">Повышение квалификации<br />(до 144 часов) </a>
+											<a href="index.php?q=slushatel/pk_144" class="a_name">Повышение квалификации<br />(до 144 часов) </a>
 											<div class="mn_group">
 												
 											</div>
 										</li>
 										<li>
-											<a href="#" class="a_name">Дистанционное обучение </a>
+											<a href="#" class="a_name">Календарный план циклов</a>
 											<div class="mn_group">
 												
 											</div>
 										</li>
 										<li>
-											<a href="order.html" class="a_name">Заявка на обучение </a>
+											<a href="#" class="a_name">Стоимость обучения</a>
 											<div class="mn_group">
 												
 											</div>
@@ -176,53 +171,17 @@
 								</div>
 							</li>
 							<li>
-								<a href="order.html">заявка на обучение</a>
+								<a href="index.php?q=order">заявка на обучение</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
 				<div class="bl_top">
-					<div class="top_colum_left">
-						<nav>
-							<ul>
-								<li>
-									<a href="#" class="active">главная</a>
-								</li>
-								<li>
-									<a href="#">кафедра</a>
-								</li>
-								<li>
-									<a href="#">Федеральный центр</a>
-								</li>
-								<li>
-									<a href="#">наука</a>
-								</li>
-								<li>
-									<a href="#">обучение</a>
-								</li>
-								<li>
-									<a href="#">технологии</a>
-								</li>
-								<li>
-									<a href="#">библиотека</a>
-								</li>
-								<li>
-									<a href="#">контакты</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="content-text">
-					  <img src="./images/slushatel.jpg">
-					  <h1> Слушателям </h1>
-					  <h2> Аннотация </h2>
-					<p>Программа профессиональной переподготовки по специальности «Организация здравоохранения и общественное здоровье» предназначена для подготовки вновь назначенных на должность руководителей организаций здравоохранения, их заместителей, врачей-методистов, врачей-статистиков и лиц, состоящих в резерве на замещение этих должностей. Курс обучения рассчитан на 3,5 месяца и нацелен  на формирование способности и готовности руководителей здравоохранения принимать оптимальные управленческие решения, внедряя эффективные технологии управления  с учетом тенденций общественного здоровья и влияния факторов внешней среды.</p>
-					<p>Все занятия проходят в комфортных аудиториях, симмуляционном  и ситуационном центрах . Для формирования профессиональных компетенций в процессе подготовки используются современные педагогические технологии (тренинги, кейсы, деловые игры, круглые столы, проектные работы и др.), в том числе электронное и дистанционное обучение.</p>
-					<p>Опытные преподаватели  кафедры - организаторы здравоохранения, юристы, экономисты – формируют системное мышление современного руководителя, способного управлять организацией здравоохранения в условиях неопределённости и риска.</p>
-					</div>
-					
+					<? require_once('pages/left_menu.php'); ?>
+					<?=$content?>
 				</div>
 			</div>
+			<? if ($page!='order'): ?>
 			<div class="block_bg2">
 				<div class="events">
 					<h2>события</h2>
@@ -263,6 +222,7 @@
 					<p>orgzdrav@koziz.ru</p>
 				</div>
 			</div>
+			<? endif; ?>
 		</div>
 		<footer>
 			<div class="footer">
