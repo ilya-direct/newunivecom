@@ -555,4 +555,23 @@ footer {
     text-align: justify;
 }
 
+.content-text ol{
+    padding-left: 30px;
+}
 
+.content-text ol li{
+    color: #848282;
+    font: 15px/1.2 SansSerif;
+    text-align: justify;
+    list-style: decimal;
+}
+
+.content-text ul {
+    padding-left: 30px;
+}
+.content-text ul li{
+    color: #848282;
+    font: 15px/1.2 SansSerif;
+    text-align: justify;
+    list-style-type: circle;
+}
