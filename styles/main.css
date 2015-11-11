@@ -541,7 +541,13 @@ footer {
 .content-text h2{
 	font: 18px/1.1 Tahoma;
 	font-weight: bold;
-	line-height: 2.5;
+	line-height: 2;
+}
+.content-text h3{
+    font: 17px/1.2 SansSerif;
+    font-weight: bold;
+    color: #848282;
+    line-height: 1.5;
 }
 
 .content-text p{

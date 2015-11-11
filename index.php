@@ -13,11 +13,30 @@
 	}else{
 		$content='';
 	}
+	if(empty($page)) $page='xcklsdhafhnsdlfuweurwhpie';
+	$titles=[
+		['name'=>'Главная','url'=>'index.php?q=main'],
+		['name'=>'Кафедра','url'=>'#'],
+		['name'=>'Федеральный центр','url'=>'#'],
+		['name'=>'Наука','url'=>'#'],
+		['name'=>'Обучение','url'=>'#'],
+		['name'=>'Технологии','url'=>'#'],
+		['name'=>'Библиотека','url'=>'#'],
+		['name'=>'Контакты','url'=>'index.php?q=contacts'],
+		['name'=>'Аннотация курса','url'=>'index.php?q=slushatel/pp_annotaciya'],
+	];
+	foreach($titles as $tl){
+		if(preg_match('/'.preg_quote($page,'/').'/i',$tl['url'])){
+			$title=$tl['name'];
+			break;
+		}
+	}
+	if(empty($title)) $title='Главная';
 ?><!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Главная</title>
+	<title><?=$title?></title>
 	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles/reset-min.css" />
 	<link rel="stylesheet" type="text/css" href="styles/main.css" />
