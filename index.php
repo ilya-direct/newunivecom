@@ -4,11 +4,14 @@
     }else{
 	    $page=$_GET['q'];
     }
-	$file=realpath('./pages/'.$page.'.html');
-	if(file_exists($file)){
-		$content=file_get_contents($file);
+	$file1=realpath('./pages/'.$page.'.html');
+	$file2=realpath('./pages/'.$page.'.php');
+	if(file_exists($file1)){
+		$content=file_get_contents($file1);
+	}elseif(file_exists($file2)){
+		$content=null;
 	}else{
-		$content="";
+		$content='';
 	}
 ?><!DOCTYPE html>
 <html>
@@ -156,13 +159,13 @@
 											</div>
 										</li>
 										<li>
-											<a href="#" class="a_name">Календарный план циклов</a>
+											<a href="pdf/16.pdf" class="a_name">Календарный план циклов</a>
 											<div class="mn_group">
 												
 											</div>
 										</li>
 										<li>
-											<a href="#" class="a_name">Стоимость обучения</a>
+											<a href="pdf/17.pdf" class="a_name">Стоимость обучения</a>
 											<div class="mn_group">
 												
 											</div>
@@ -178,7 +181,7 @@
 				</div>
 				<div class="bl_top">
 					<? require_once('pages/left_menu.php'); ?>
-					<?=$content?>
+					<? if(is_null($content))  require($file2); else echo $content;?>
 				</div>
 			</div>
 			<? if ($page!='order'): ?>
@@ -216,10 +219,11 @@
 				</div>
 				<div class="contacts">
 					<h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-					<p>Москва, Россия </p>
-					<p>Милютинский переулок, 19/4с1</p>
-					<p>​Тел.: +7 (495) 621 89 43 </p>
-					<p>orgzdrav@koziz.ru</p>
+					<p>101000, Москва, Милютинский пер., 19/4 стр.2</p>
+					<p>Тел.:</p>
+					<p>&nbsp;&nbsp;+7 (495) 621 89 43 (среднее и высшее проф. образование)</p>
+					<p>&nbsp;&nbsp;+7 (495) 628 85 92 (дополнительное проф. образование)</p>
+					<p>E-mail: orgzdrav@koziz.ru</p>
 				</div>
 			</div>
 			<? endif; ?>

@@ -2,7 +2,6 @@
 switch($page){
 	case 'main':
 	 echo <<<HH
-<link href="slider/jquery.bxslider.css" rel="stylesheet" />
 <script src="slider/jquery.bxslider.min.js"></script>
 <script>
 	$(document).ready(function() {
@@ -14,6 +13,7 @@ switch($page){
 		  });
 	});
 </script>
+<link href="slider/jquery.bxslider.css" rel="stylesheet" />
 HH;
 	 break;
     case 'order':
@@ -30,4 +30,18 @@ HH;
 </script>
 HH;
 	    break;
+}
+if(preg_match('/slushatel/',$page)){
+	echo <<<HH
+<script src="slider/jquery.bxslider.min.js"></script>
+<script>
+	$(document).ready(function() {
+		 $('.bxslider').bxSlider({
+			speed: 900,
+			auto: true
+		 });
+	});
+</script>
+<link href="styles/jquery.bxslider.pure.css" rel="stylesheet" />
+HH;
 }

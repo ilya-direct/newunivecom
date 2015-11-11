@@ -299,7 +299,7 @@ body {
 }
 
 .events {
-	width: 595px;
+	width: 550px;
 	padding-right: 15px;
 	border-right: 1px dashed #A19F9E;
 }
@@ -368,7 +368,7 @@ body {
 }
 
 .contacts {
-	width: 365px;
+	width: 420px;
 	margin-left:20px;
 }
 
@@ -531,11 +531,7 @@ footer {
 	display: inline-block;
 	vertical-align: top;
 }
-.content-text img{
-	width: 350px;
-	float: right;
-	margin: 20px;
-}
+
 
 .content-text h1{
 	font: 25px/1.1 Tahoma;
@@ -574,4 +570,18 @@ footer {
     font: 15px/1.2 SansSerif;
     text-align: justify;
     list-style-type: circle;
+}
+
+.page_contacts{
+    display: inline-block;
+}
+
+.slushatel_gallery{
+    width: 350px;
+    float: right;
+    margin: 20px;
+
+}
+.slushatel_gallery ul{
+    padding: 0;
 }

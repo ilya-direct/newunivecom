@@ -8,7 +8,7 @@
 		['name'=>'Обучение','url'=>'#'],
 		['name'=>'Технологии','url'=>'#'],
 		['name'=>'Библиотека','url'=>'#'],
-		['name'=>'Контакты','url'=>'#'],
+		['name'=>'Контакты','url'=>'index.php?q=contacts'],
 	];
 ?>
 <div class="top_colum_left">
